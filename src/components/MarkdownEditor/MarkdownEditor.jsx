@@ -105,13 +105,16 @@ function MarkdownEditor(props) {
   return (
     <div id="editor-container">
       <div id="title-container">
-        <div id="title">Markdown Editor</div>
+        <h3>Markdown Editor</h3>
         <div>
-          <button onClick={handleSaveClick}>Save</button>
+          <button tabIndex={0} id="save" onClick={handleSaveClick}>
+            Save
+          </button>
         </div>
       </div>
       <div id="editor">
         <Editor
+          tabIndex={1}
           editorState={editorContents}
           onChange={setEditorContents}
           handleKeyCommand={handleKeyCommand}
