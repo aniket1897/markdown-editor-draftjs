@@ -117,6 +117,7 @@ function MarkdownEditor(props) {
           handleKeyCommand={handleKeyCommand}
           keyBindingFn={keyBindingFunction}
           customStyleMap={styleMap}
+          placeholder="Type something..."
         />
       </div>
     </div>
